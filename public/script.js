@@ -1,6 +1,6 @@
 async function buscarFilmes() {
     const query = document.getElementById('busca-input').value;
-    const url = `/api/search?query=${encodeURIComponent(query)}`;
+    const url = `/api/filme?query=${encodeURIComponent(query)}`;
 
     try {
         const resposta = await fetch(url);
